@@ -12,7 +12,7 @@
 	url = https://github.com/marian-nmt/nccl
 [submodule "src/3rd_party/fbgemm"]
 	path = src/3rd_party/fbgemm
-	url = https://github.com/marian-nmt/FBGEMM
+	url = git@github.com:Targoman/fbgemm-browsermt.git
 	branch = master
 [submodule "src/3rd_party/intgemm"]
 	path = src/3rd_party/intgemm
