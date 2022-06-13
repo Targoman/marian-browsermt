@@ -13,6 +13,14 @@ add_subdirectory(./pathie-cpp)
 set(INTGEMM_DONT_BUILD_TESTS ON CACHE BOOL "Disable intgemm tests")
 add_subdirectory(./intgemm)
 
+if(GENERATE_MARIAN_INSTALL_TARGETS)
+  install(TARGETS intgemm
+    EXPORT marian-targets
+    DESTINATION intgemm)
+endif(GENERATE_MARIAN_INSTALL_TARGETS)
+
+
+
 if(USE_WASM_COMPATIBLE_BLAS)
   add_subdirectory(./onnxjs)
 endif(USE_WASM_COMPATIBLE_BLAS)
